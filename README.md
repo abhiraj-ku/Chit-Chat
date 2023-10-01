@@ -36,7 +36,3 @@ A real-time chat app built with Socket.io.
 ## Contributing
 
 Contributions are welcome! Create issues or pull requests.
-
-# homescreen
-
-![chit-Chat-home](https://github.com/abhiraj-ku/Chit-Chat/assets/113116498/965f2dd5-b45f-49ae-9372-d4ba60cbd3c3)
