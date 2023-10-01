@@ -18,7 +18,7 @@ A real-time chat app built with Socket.io.
 
 ## Usage
 
-1. Choose a username and chat room.
+1. Choose a username.
 2. Start chatting.
 
 ## Tech Stack
