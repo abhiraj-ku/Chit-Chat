@@ -1,175 +1,182 @@
-
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(45deg, #3498db, #9b59b6, #e74c3c);
-    background-size: 400% 400%;
-    animation: gradientAnimation 15s ease infinite;
-    overflow: hidden;
-  }
-  
-  @keyframes gradientAnimation {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(45deg, #3498db, #9b59b6, #e74c3c);
+  background-size: 400% 400%;
+  /* animation: gradientAnimation 15s ease infinite; */
+}
 
-  .brand-container {
-    background: linear-gradient(to right, #4A90E2, #3F7CAC);
-    text-align: center;
-    padding: 20px 0;
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
   }
-  
-  .brand-text {
-    font-size: 24px;
-    font-weight: bold;
-    color: #fff;
-    margin: 0;
-    text-transform: uppercase;
+  50% {
+    background-position: 100% 50%;
   }
-  
-  .container {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1000px;
-    height: 70vh;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  100% {
+    background-position: 0% 50%;
   }
-  
-  .user-list {
-    flex: 1;
-    margin-right: 20px;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-  }
-  
-  .user-list h2 {
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: #333;
-  }
-  
-  .user-list ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .user-list li {
-    margin-bottom: 5px;
-    position: relative;
-    color: #444;
-  }
-  
-  
-  .user-list li::before {
-    content: '●'; 
-    color: green;
-    font-size: 15px; 
-    margin-left: 10px; 
-    position: absolute;
-    top: 0;
-    left: -20px; 
-  }
-  
-  
-  .chat {
-    flex: 3;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-  }
-  
-  
-  .message__area {
-    height: 400px;
-    overflow-y: scroll;
-    border: 1px solid #ccc;
-    padding: 10px;
-    background-color: #f9f9f9;
-    border-radius: 5px;
-  }
-  
-  .message {
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    max-width: 70%; 
-  }
-  
-  .incoming {
-    background: #8F8BE8;
-    color: #fff;
-    margin-left: auto;
- 
-    border: 2px solid #8F8BE8;
-    border-radius: 10px; 
-  }
-  
-  .outgoing {
-    background: #e9eafd;
-    color: #787986;
-    
-    border: 2px solid #e9eafd;
-    border-radius: 10px; 
-  }
-  
-  .message h4 {
-    font-size: 16px;
-    margin: 0 0 5px;
-  }
-  
-  .message p {
-    font-size: 14px;
-    margin: 0;
-  }
-  
-  #textarea {
-    width: 66%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 14px;
-    position: absolute;
-    bottom: 50px;
-    left: 250px;
-  }
-  
-  #textarea:focus {
-    outline: none;
-  }
-  
-  .share-sidebar {
-    position: fixed;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  
-  /* Share icon styles (adjust as needed) */
-  
-  .share-icon {
-    font-size: 24px;
-    margin: 5px;
-    cursor: pointer;
-  }
+}
+
+.brand-container {
+  background: linear-gradient(to right, #4a90e2, #3f7cac);
+  text-align: center;
+  padding: 20px 0;
+}
+
+.brand-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  margin: 0;
+  text-transform: uppercase;
+}
+span {
+  color: #01f55f;
+  border-bottom: 2px solid greenyellow;
+}
+
+.container {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  /* max-width: 1000px; */
+  width: 90vw;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+}
+
+.user-list {
+  flex: 1;
+  margin-right: 20px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.user-list h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+  border-bottom: 5px solid blue;
+  background-color: #01f55f;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.user-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.user-list li {
+  margin: 5px;
+  position: relative;
+  padding: 3px;
+  transition: all 0.3s ease-in-out;
+}
+.user-list li:hover {
+  background-color: #ff094a;
+  border-radius: 13px;
+  padding: 9px;
+}
+
+.user-list li::before {
+  content: "●";
+  color: green;
+  font-size: 20px;
+  margin-left: 15px;
+  position: absolute;
+  top: 0;
+  left: -25px;
+}
+
+.chat {
+  flex: 3;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.message__area {
+  height: 70%;
+  overflow-y: scroll;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+.message {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  max-width: 70%;
+}
+
+.incoming {
+  background: #8f8be8;
+  color: #fff;
+  margin-left: auto;
+
+  border: 2px solid #8f8be8;
+  border-radius: 10px;
+}
+
+.outgoing {
+  background: #e9eafd;
+  color: #787986;
+
+  border: 2px solid #e9eafd;
+  border-radius: 10px;
+}
+
+.message h4 {
+  font-size: 16px;
+  margin: 0 0 5px;
+}
+
+.message p {
+  font-size: 14px;
+  margin: 0;
+}
+
+#textarea {
+  width: 900px;
+  padding: 18px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  position: fixed;
+  bottom: 17px;
+}
+
+#textarea:focus {
+  outline: none;
+}
+
+.share-sidebar {
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.share-icon {
+  font-size: 24px;
+  margin: 5px;
+  cursor: pointer;
+}
