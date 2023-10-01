@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chit-Chat || Real time Chat app with multiusers</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  </head>
+  <body>
+    <div class="brand-container">
+      <h1 class="brand-text">Chit-Chat </h1>
+  </div>
+    <div class="container">
+      <div class="user-list">
+        <h2>Online Users</h2>
+        <ul id="onlineUsersList"></ul>
+      </div>
+      <div class="chat">
+        <div class="message__area"></div>
+        <input
+          id="textarea"
+          type="text"
+          placeholder="Type a message and press Enter"
+        />
+      </div>
+    </div>
+    <div class="share-sidebar">
+      <a href="https://github.com/abhiraj-ku" target="_blank" class="share-icon">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://twitter.com/abhirajabhi312" target="_blank" class="share-icon">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
+  </body>
+</html>
